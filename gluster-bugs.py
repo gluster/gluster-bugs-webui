@@ -97,6 +97,7 @@ def main():
     f.write('{"date": "%s", "bugs": [' % datetime.datetime.now())
 
     bzq = bz.build_query(product=LPPROJECT, status=BZSTATUS)
+    bzq['extra_fields'] = ['comments']
     bugs = bz.query(bzq)
     for task in bugs:
         try:
