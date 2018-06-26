@@ -33,7 +33,7 @@ BZURL = "https://bugzilla.redhat.com/xmlrpc.cgi"
 BZSTATUS = ('NEW', 'ASSIGNED', 'POST', 'MODIFIED', 'ON_QA')
 BZPRIORITY = ('urgent', 'high', 'medium', 'unspecified', 'low')
 
-GERRIT_URL = "http://review.gluster.org"
+GERRIT_URL = "https://review.gluster.org"
 
 RE_LINK = re.compile(' %s/(\d+)' % GERRIT_URL)
 
